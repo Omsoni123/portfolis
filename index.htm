@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Soni - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        header ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        #hero .btn {
+            background: #ffcc00;
+            color: black;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        #hero .btn:hover {
+            background: #ff9900;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        section p, section ul {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            background: #e7f3ff;
+            color: #0056b3;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+
+        /* Projects */
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #0056b3;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Om Soni</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Hi, I'm Om Soni</h1>
+        <p>Data Analyst | Python Enthusiast | SQL Expert</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a data analyst with a passion for turning data into actionable insights. I have strong skills in Python, SQL, and machine learning, and I strive to deliver results that make an impact.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Machine Learning</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Stock Price Prediction</h3>
+            <p>A machine learning project to predict stock prices using regression models.</p>
+        </div>
+        <div class="project">
+            <h3>House Price Prediction</h3>
+            <p>A regression model to predict house prices based on various factors.</p>
+        </div>
+        <div class="project">
+            <h3>Text File Analyzer</h3>
+            <p>A Python project that analyzes text files for word count, frequency, and more.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: om.soni@example.com</p>
+        <p>Phone: +91 12345 67890</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Om Soni. All rights reserved.</p>
+    </footer>
+</body>
+</html>
